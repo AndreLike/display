@@ -13,6 +13,13 @@
                 </div>
             </el-col>
         </el-row>
+        <br>
+        <br>
+        <el-row>
+          <div>
+            <sample-exhibition></sample-exhibition>
+          </div>
+        </el-row>
     </div>
 </template>
 
@@ -20,12 +27,14 @@
   import Qs from 'qs'
   import WordCloud from './WordCloud'
   import Results from './Results'
+  import SampleExhibition from './SampleExhibition'
 
   export default {
     name: 'charts',
     components: {
       "word-cloud":WordCloud,
       "results":Results,
+      'sample-exhibition':SampleExhibition
     },
     data(){
       return{
